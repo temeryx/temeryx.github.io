@@ -1,5 +1,12 @@
 body {
     background-color: rgb(243, 232, 232);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#container{
+  flex:1;
 }
 
 .skip-to-main-content-link {
@@ -123,12 +130,19 @@ article img {
   }
 
 h2 {
-    text-align: justify;
+    text-align: center;
     color: rgb(145, 72, 4);
 }
 
 .h2_center {
   text-align: center;
+}
+
+footer {
+  background-color: #b7ffcd;
+  border: rgb(229, 114, 59);
+  border-style: solid;
+  border-width: 3px;
 }
 
 footer ul {
