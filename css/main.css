@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+}
+
+section {
+    background-color: rgb(190, 189, 189);
+    border: solid 4px rgb(0, 0, 0);
+    position: relative;
+    margin: 15px;
+}
+
+.absoulte_chicken {
+    background-color: rgb(231, 195, 195);
+    border: solid rgb(0, 0, 0);
+    border-top: 0px;
+    border-right: 0px;
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.absoulte_beef {
+    background-color: rgb(230, 105, 105);
+    border: solid rgb(0, 0, 0);
+    border-top: 0px;
+    border-right: 0px;
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.absoulte_sushi {
+    background-color: rgb(228, 220, 147);
+    border: solid rgb(0, 0, 0);
+    border-top: 0px;
+    border-right: 0px;
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+p {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid_container {
+        grid-template-columns: 48% 48%;
+    }
+
+    .spaner {
+        grid-column: span 2;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) {
+    .grid_container {
+        grid-template-columns: 33% 33% 33%;
+      }
+    
+}
